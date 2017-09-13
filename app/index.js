@@ -1,7 +1,8 @@
 import React from 'react'
 import { render } from 'react-dom'
+import App from './containers/index'
 
 render(
-	<h1>Hellow world wowowo</h1>,
+	<App/>,
 	document.getElementById("app")
 	)
