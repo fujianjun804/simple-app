@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-  	"start": "webpack-dev-server --port 5000 --open --progress --colors",
+  	"start": "webpack-dev-server --port 3002 --open --progress --colors",
   	"build": "webpack -p"
   },
   "dependencies": {
