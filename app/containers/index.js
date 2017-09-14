@@ -31,11 +31,11 @@ export default class App extends Component {
 	}
 
 	componentDidMount() {
-		setTimeout(()=>{
+		// setTimeout(()=>{
 			this.setState({
 				done: true
 			})
-		},5000)
+		// },5000)
 		
 	}
 }

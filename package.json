@@ -4,8 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-  	"start": "webpack-dev-server --port 3002 --open --progress --colors",
-  	"build": "webpack -p"
+    "start": "webpack-dev-server --port 3002 --open --progress --colors",
+    "build": "webpack -p",
+    "mock": "node server.js"
   },
   "dependencies": {
     "babel-core": "^6.26.0",
@@ -20,10 +21,13 @@
     "less": "^2.7.2",
     "less-loader": "^4.0.5",
     "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
+    "react-swipe": "^5.0.8",
     "redux": "^3.7.2",
     "style-loader": "^0.18.2",
+    "swipe-js-iso": "^2.0.4",
     "webpack": "^3.5.6",
     "webpack-dev-server": "^2.7.1",
     "whatwg-fetch": "^2.0.3"
