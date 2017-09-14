@@ -8,6 +8,7 @@ export default class HomeHeader extends Component {
 
 		let { cityName } = this.props
 
+
 		return (
 			<div className="home-header back">
 				<div className="city">

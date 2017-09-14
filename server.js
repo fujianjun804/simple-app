@@ -16,6 +16,6 @@ app.get('/api/ad', (req,res) => {
 	console.log('Example app listening at http:');
 	res.send(ad);
 });
-app.listen(3002, function() {
+app.listen(3000, function() {
 	console.log("servier start sucess");
 });
