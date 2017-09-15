@@ -1,8 +1,6 @@
 import * as Types from '../action-types/userInfo'
 
-let initState = {
-
-}
+let initState = {}
 
 export function userInfo (state = initState, action) {
 	

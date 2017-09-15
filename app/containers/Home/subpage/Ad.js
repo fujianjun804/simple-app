@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {getAd} from '../../../fetch/home'
+import './index.less'
 
 export default class Ad extends Component {
 	constructor(props) {
@@ -26,7 +27,7 @@ export default class Ad extends Component {
 	}
 
 	componentDidMount() {
-		
+
 		getAd().then(res=>res.json()).then(data=>{
             this.setState({
                 data
