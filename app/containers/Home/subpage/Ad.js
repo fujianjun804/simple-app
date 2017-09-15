@@ -28,10 +28,15 @@ export default class Ad extends Component {
 
 	componentDidMount() {
 
-		getAd().then(res=>res.json()).then(data=>{
-            this.setState({
+  		this.processData(getAd())
+	}
+
+	processData(result) {
+		
+		result.then(res => res.json()).then(data => {
+			this.setState({
                 data
             })
-        });
+		})
 	}
 }
