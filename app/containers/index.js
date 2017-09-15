@@ -5,6 +5,7 @@ import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 // 获取所有 ActionCreators 组成的对象
 import * as Actions from '../actions/userInfo'
+import {getStorage} from '../local'
 
 class App extends Component {
 
@@ -39,7 +40,13 @@ class App extends Component {
 
 		// 先本地查找，是否存储过名字叫cityName的，没有默认一个城市 北京
 		// 将当前的城市存到 redux 
-
+		
+		let {userActions} = this.props
+		let cityName = getStorage('cityName') || '北京'
+		// 页面加载后，设置一个城市
+		userActions.update({
+			cityName
+		})
 
 		// setTimeout(()=>{
 			this.setState({
