@@ -8,7 +8,7 @@ export default class ListComponent extends Component {
 	render() {
 	
 		let {data} = this.props
-debugger
+
 		return (
 			<div>
 				{
